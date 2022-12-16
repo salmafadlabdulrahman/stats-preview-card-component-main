@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+
+    <title>Frontend Mentor | Stats preview card component</title>
+  </head>
+  <body>
+    <main>
+      <article class="card">
+        <div class="img-wrapper">
+          <picture class="card__img">
+            <div class="image" id="mobile-image"></div>
+            <source srcset="images/image-header-desktop.jpg" media="(min-width:600px)" style="background-position: center">
+            <img
+              src="images/image-header-mobile.jpg"
+              alt="a group of people discussing some stuff and working together"
+            />
+          </picture>
+        </div>
+
+        <div class="card__content">
+          <h1 class="card__title">
+            Get <span class="highlight">insights</span> that help your business
+            grow.
+          </h1>
+          <p class="card__main-paragraph">
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </p>
+
+          <div class="card__counts">
+            <p class="col">10k+ <br /><span>companies</span></p>
+            <p class="col">314 <br /><span>templates</span></p>
+            <p class="col">12m+ <br /><span>queries</span></p>
+          </div>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
